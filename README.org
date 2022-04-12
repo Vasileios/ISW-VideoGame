@@ -1,5 +1,30 @@
 #+Title: ISW video game
 
+
+* Using wearable controller for navigation and interaction in videogames.
+In this project the LiveGloving wearable system (glove) (Agiomyrgianakis, 2021)
+has been used to control the movement of the character in the videogame
+environment, as well as to activate events such as sounds, to be able to
+interrupt the recording, to emit light bulbs, to pause the game, and to display
+the options menu. For this project I have adapted the glove for the needs of the
+game. This means that I have used the data from the 3-axis accelerometer sensor
+to control the movement of the character into the environment and the buttons to
+activate and deactivate events.
+
+In UE4 I have built the algorithm that is responsible to receive data from the sensors and to translate them into a movement mechanism, and other actions of the player. To succeed the communication between the glove and UE4-SuperCollider, I have made use of the OSC communication protocol.
+UE4 has a plethora of libraries (plug-ins) such as OSC. To enable OSC plugin in UE4 it is necessary to navigate to Edit > Plugins > Input Devices, and to check the OSC enable option. This plugin “provides an
+intuitive, type-safe Blueprint library that a developer can use to quickly
+iterate networked audio (and potentially other domain) data in Unreal Engine.
+When this plugin is enabled, you can send and receive OSC events through a
+simple API in either C++ or Blueprint. It supports sending and receiving
+messages and bundles, or combinations of bundles and messages.
+The below Figure shows the algorithm that is responsible to measure and send OSC
+messages of the azimuth and elevation from UE4 to other programming environments
+such as SuperCollider.
+
+#+Caption: Azimuth - Elevation OSC
+[[./pics/azimuth_elevation_blueprint.png]]
+
 * Unreal Engine
 
 ** Blueprints
