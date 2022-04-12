@@ -38,6 +38,5 @@ Figure 1 shows the algorithm for OSC communication between UE4 and other program
 ** Blueprints
 
 Character blueprints
-Jet blueprints
 
 Osc communication blueprints
