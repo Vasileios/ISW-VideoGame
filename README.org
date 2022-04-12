@@ -4,6 +4,8 @@ DCAC - 2021
 
 International Conference on Digital Culture & AudioVisual Challenges
 
+Vasilis Agiomyrgianakis
+
 * Using wearable controller for navigation and interaction in videogames.
 In this project the LiveGloving wearable system (glove) (Agiomyrgianakis, 2021)
 has been used to control the movement of the character in the videogame
