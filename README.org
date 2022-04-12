@@ -18,9 +18,12 @@ iterate networked audio (and potentially other domain) data in Unreal Engine.
 When this plugin is enabled, you can send and receive OSC events through a
 simple API in either C++ or Blueprint. It supports sending and receiving
 messages and bundles, or combinations of bundles and messages.
-The below Figure shows the algorithm that is responsible to measure and send OSC
-messages of the azimuth and elevation from UE4 to other programming environments
-such as SuperCollider.
+
+* Algorithmic composition paradigms in SuperCollider environment
+
+In SuperCollider there are built-in tools for ambisonics as well as extensions such as the ATK ambisonics tool kit by Joseph Anderson (2012)’. The ATK library has been developed for SuperCollider3 in 2012. In this project I have experimented with some paradigms using the built-in tools such as the PanB which is an Ambisonic B format panner with output channels in order W, X, Y, Z, and ATK library such as FoaDecoderMatrix.newStereo and FoaDecoderKernel.newUHJ which are two channel stereo, and two channels binaural.
+
+Figure 1 shows the algorithm for OSC communication between UE4 and other programming environments such as SuperCollider.
 
 #+Caption: Azimuth - Elevation OSC
 [[./pics/azimuth_elevation_blueprint.png]]
