@@ -1,5 +1,8 @@
-#+Title: ISW video game
+#+Title: ISW: Experimental schemes for live coding performances. An experimental videogame with a wearable controller for creating immersive soundwalks.
 
+DCAC - 2021
+
+International Conference on Digital Culture & AudioVisual Challenges
 
 * Using wearable controller for navigation and interaction in videogames.
 In this project the LiveGloving wearable system (glove) (Agiomyrgianakis, 2021)
